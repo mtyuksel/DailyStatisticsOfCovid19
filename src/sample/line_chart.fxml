@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="958.0" prefWidth="1149.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LineChartController">
+   <children>
+      <LineChart fx:id="caseChart" layoutX="218.0" layoutY="43.0" prefHeight="409.0" prefWidth="925.0" title="Cases Over Time">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <ListView fx:id="countryList" layoutX="14.0" layoutY="79.0" prefHeight="793.0" prefWidth="198.0" />
+      <Label layoutX="11.0" layoutY="54.0" text="Please select countries from list below." />
+      <Button fx:id="selectButton" layoutX="17.0" layoutY="881.0" mnemonicParsing="false" onAction="#submitCountry" prefHeight="25.0" prefWidth="198.0" text="Select" />
+      <LineChart fx:id="deathChart" layoutX="212.0" layoutY="507.0" prefHeight="422.0" prefWidth="925.0" title="Deaths Over Time">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </LineChart>
+   </children>
+</AnchorPane>

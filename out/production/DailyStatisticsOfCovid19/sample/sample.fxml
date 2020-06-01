@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="180.0" prefWidth="755.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <Label fx:id="lblEnterXml" layoutX="24.0" layoutY="23.0" prefHeight="25.0" prefWidth="103.0" text="Dataset URL:" />
+        <TextField fx:id="txtXml" layoutX="97.0" layoutY="23.0" prefHeight="25.0" prefWidth="537.0" text="https://opendata.ecdc.europa.eu/covid19/casedistribution/xml/" />
+        <Button fx:id="btnSubmit" layoutX="642.0" layoutY="23.0" mnemonicParsing="false" onAction="#onSubmit" prefHeight="25.0" prefWidth="89.0" text="Get Data" />
+        <Label fx:id="lblError" layoutX="136.0" layoutY="107.0" textFill="#f52525" />
+        <Button fx:id="btnDataTable" layoutX="92.0" layoutY="134.0" mnemonicParsing="false" onAction="#btnDataTableClick" prefHeight="25.0" prefWidth="89.0" text="Data Table" visible="false" />
+        <Button fx:id="btnLineChart" layoutX="321.0" layoutY="134.0" mnemonicParsing="false" onAction="#btnLineChartClick" prefHeight="25.0" prefWidth="89.0" text="Line Chart " visible="false" />
+        <Button fx:id="btnBarChart" layoutX="545.0" layoutY="134.0" mnemonicParsing="false" onAction="#btnBarChartClick" prefHeight="25.0" prefWidth="89.0" text="Bar Chart" visible="false" />
+      <Label layoutX="129.0" layoutY="56.0" text="You have to enter this url: https://opendata.ecdc.europa.eu/covid19/casedistribution/xml/" />
+      <Label layoutX="236.0" layoutY="76.0" text="It was my homework, I just check URL with regex." />
+    </children>
+</AnchorPane>

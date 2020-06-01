@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="964.0" prefWidth="1205.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.DataTableController">
+   <children>
+      <TableView fx:id="tableData" layoutY="14.0" prefHeight="948.0" prefWidth="1202.0">
+        <columns>
+          <TableColumn fx:id="CountryColumn" prefWidth="150.0" text="Country" />
+          <TableColumn fx:id="TotalCasesColumn" prefWidth="150.0" text="Total Cases" />
+          <TableColumn fx:id="NewCasesColumn" prefWidth="150.0" text="New Cases" />
+          <TableColumn fx:id="TotalDeathsColumn" prefWidth="150.0" text="Total Deaths" />
+          <TableColumn fx:id="NewDeathsColumn" prefWidth="150.0" text="New Deaths" />
+          <TableColumn fx:id="PopulationColumn" prefWidth="150.0" text="Population" />
+          <TableColumn fx:id="MortalityColumn" prefWidth="150.0" text="Mortality" />
+          <TableColumn fx:id="AttackRateColumn" prefWidth="150.0" text="Attack Rate" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

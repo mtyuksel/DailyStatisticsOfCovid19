@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="988.0" prefWidth="1201.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.BarChartController">
+   <children>
+      <StackedBarChart fx:id="barCase" layoutX="13.0" layoutY="56.0" prefHeight="400.0" prefWidth="1176.0" title="Covid-19 Cases Over Time">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </StackedBarChart>
+      <StackedBarChart fx:id="barDeath" layoutX="13.0" layoutY="475.0" prefHeight="400.0" prefWidth="1176.0" title="Covid-19 Deaths Over Time">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </StackedBarChart>
+      <DatePicker fx:id="startDate" layoutX="96.0" layoutY="21.0" />
+      <DatePicker fx:id="endDate" layoutX="346.0" layoutY="21.0" />
+      <Button fx:id="btnFilter" layoutX="542.0" layoutY="21.0" mnemonicParsing="false" onAction="#btnFilterClick" prefHeight="25.0" prefWidth="101.0" text="Filter" />
+      <Label layoutX="32.0" layoutY="25.0" text="Start Date:" />
+      <Label layoutX="287.0" layoutY="25.0" text="End Date:" />
+   </children>
+</AnchorPane>
